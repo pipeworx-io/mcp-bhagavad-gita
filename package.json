@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-bhagavad-gita",
+  "version": "0.1.0",
+  "description": "Bhagavad Gita MCP — Hindu scripture / Vedic text.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "bhagavad-gita"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-bhagavad-gita"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
