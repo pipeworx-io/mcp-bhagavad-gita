@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-bhagavad-gita",
-  "version": "0.1.2",
-  "description": "Bhagavad Gita MCP — Hindu scripture / Vedic text.",
+  "version": "0.1.3",
+  "description": "Bhagavad Gita MCP — Hindu scripture / Vedic text. Sanskrit verses (slokas) with English translations, via the Vedic Scriptures API. Keyless, GitHub Pages JSON. https://vedicscriptures.github.io",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-e077dce9214ed01f42d5cf2562df029fa0f636e5b8b6a9a852419ad06e29e08f",
-    "sourceCommit": "454041882179fae560c06e770b6b7a2f33970015"
+    "sourceHash": "v1-ac1ac3ba14f041550002805e45e723051c656bfbc0f99ae6db6ac0859438ebc8",
+    "sourceCommit": "5d8d3a58a457b8464c117515d81b8b6ecb53fdfb"
   }
 }
