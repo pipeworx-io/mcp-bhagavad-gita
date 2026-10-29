@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-bhagavad-gita",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Bhagavad Gita MCP — Hindu scripture / Vedic text. Sanskrit verses (slokas) with English translations, via the Vedic Scriptures API. Keyless, GitHub Pages JSON. https://vedicscriptures.github.io",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-bhagavad-gita": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "bhagavad-gita"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-bhagavad-gita.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/bhagavad-gita",
   "pipeworx": {
-    "sourceHash": "v1-4d34d96921b1bf343e39b01df911c601d40162bc1f81e8dc4dd09a0a125ab437",
-    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
+    "mode": "gateway",
+    "slug": "bhagavad-gita",
+    "gatewaySlug": "bhagavad-gita",
+    "sourceHash": "v1-7c4330567a65623b5fbf088e43782d632f754605c543d0c029c3c8ac7d1f4b12",
+    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
   }
 }

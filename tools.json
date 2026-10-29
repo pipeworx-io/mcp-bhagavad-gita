@@ -1,0 +1,47 @@
+[
+  {
+    "name": "list_chapters",
+    "description": "List all 18 chapters of the Bhagavad Gita (Hindu scripture / Vedic text). Returns chapter number, Sanskrit name, transliteration, English meaning, summary, and verse count.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  {
+    "name": "get_chapter",
+    "description": "Get one chapter of the Bhagavad Gita (Vedic scripture) by number. Returns the Sanskrit name, transliteration, English meaning, summary, and verse count.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "chapter": {
+          "type": "number",
+          "description": "Chapter number, 1-18."
+        }
+      },
+      "required": [
+        "chapter"
+      ]
+    }
+  },
+  {
+    "name": "get_verse",
+    "description": "Get a single verse (sloka) of the Bhagavad Gita by chapter and verse number. Returns the Sanskrit verse in Devanagari, its transliteration, and English translations from multiple commentators (Sivananda, Purohit, Gambirananda, Adidevananda) plus commentary.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "chapter": {
+          "type": "number",
+          "description": "Chapter number, 1-18."
+        },
+        "verse": {
+          "type": "number",
+          "description": "Verse (sloka) number within the chapter."
+        }
+      },
+      "required": [
+        "chapter",
+        "verse"
+      ]
+    }
+  }
+]
